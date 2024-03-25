@@ -1,21 +1,96 @@
 {
   "nodes": [
-    {"id": "The Witches of Eastwick", "group": 1},
-    {"id": "Cameron Mackintosh", "group": 2},
-    {"id": "Dana P. Rowe", "group": 2},
-    {"id": "John Dempsey", "group": 2},
-    {"id": "Theatre Royal Drury Lane", "group": 3},
-    {"id": "Theatrical Advisory Board", "group": 4},
-    {"id": "The Sun", "group": 5},
-    {"id": "The Daily Mail", "group": 5}
+    {
+      "id": "1",
+      "name": "Alexandra Spofford",
+      "description": "A sculptor and one of the three witches"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smart",
+      "description": "A cellist and one of the three witches"
+    },
+    {
+      "id": "3",
+      "name": "Sukie Rougemont",
+      "description": "A columnist and one of the three witches"
+    },
+    {
+      "id": "4",
+      "name": "Darryl Van Horne",
+      "description": "A mysterious and charismatic man who seduces the witches"
+    },
+    {
+      "id": "5",
+      "name": "Felicia Gabriel",
+      "description": "The wife of Clyde Gabriel and a conservative townswoman"
+    },
+    {
+      "id": "6",
+      "name": "Clyde Gabriel",
+      "description": "Felicia's husband and a local man"
+    },
+    {
+      "id": "7",
+      "name": "Jennifer Gabriel",
+      "description": "The daughter of Clyde and Felicia"
+    },
+    {
+      "id": "8",
+      "name": "Michael Spofford",
+      "description": "Alexandra's son"
+    }
   ],
   "links": [
-    {"source": "Cameron Mackintosh", "target": "The Witches of Eastwick", "value": 8},
-    {"source": "Dana P. Rowe", "target": "The Witches of Eastwick", "value": 7},
-    {"source": "John Dempsey", "target": "The Witches of Eastwick", "value": 7},
-    {"source": "The Witches of Eastwick", "target": "Theatre Royal Drury Lane", "value": 9},
-    {"source": "Theatrical Advisory Board", "target": "The Witches of Eastwick", "value": 4},
-    {"source": "The Sun", "target": "The Witches of Eastwick", "value": 2},
-    {"source": "The Daily Mail", "target": "The Witches of Eastwick", "value": 2}
+    {
+      "source": "1",
+      "target": "2",
+      "relation": "friend"
+    },
+    {
+      "source": "1",
+      "target": "3",
+      "relation": "friend"
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "relation": "friend"
+    },
+    {
+      "source": "1",
+      "target": "4",
+      "relation": "love_interest"
+    },
+    {
+      "source": "2",
+      "target": "4",
+      "relation": "love_interest"
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "relation": "love_interest"
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "relation": "spouse"
+    },
+    {
+      "source": "5",
+      "target": "7",
+      "relation": "parent"
+    },
+    {
+      "source": "6",
+      "target": "7",
+      "relation": "parent"
+    },
+    {
+      "source": "1",
+      "target": "8",
+      "relation": "parent"
+    }
   ]
 }
